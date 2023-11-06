@@ -51,17 +51,17 @@ $(document).ready(function () {
 	// Add new js functions here -----------------------------------------------------------------
 
 	// masonry grid
-	var $grid = $('.grid').masonry({
-		// options
-		itemSelector: '.grid-item',
-		columnWidth: '.grid-item',
-		percentPosition: true,
-		// gutter: 24,
-	});
+	// var $grid = $('.grid').masonry({
+	// 	// options
+	// 	itemSelector: '.grid-item',
+	// 	columnWidth: '.grid-item',
+	// 	percentPosition: true,
+	// 	gutter: 24,
+	// });
 	// layout Masonry after each image loads
-	$grid.imagesLoaded().progress(function () {
-		$grid.masonry();
-	});
+	// $grid.imagesLoaded().progress(function () {
+	// 	$grid.masonry();
+	// });
 
 
 	let sortBtn = document.querySelector('.filter-menu').children;
@@ -79,158 +79,112 @@ $(document).ready(function () {
 			for (let k = 0; k < sortItem.length; k++) {
 				sortItem[k].classList.remove('active');
 				sortItem[k].classList.add('delete');
-				console.log($grid);
 				// $grid.destroy();
-
-				$grid.masonry('destroy');
-				$('.grid').masonry({
-					// options
-					itemSelector: '.grid-item',
-					columnWidth: '.grid-item',
-					percentPosition: true,
-					// gutter: 24,
-				});
 
 				if (sortItem[k].getAttribute('data-item') == targetData || targetData == "all") {
 					sortItem[k].classList.remove('delete');
 					sortItem[k].classList.add('active');
+					// $grid.masonry();
 				}
 			}
 		});
 	}
 
 
-
-
-	// Progressbar code
-	var barOne = new ProgressBar.Circle(".progress-circle.one", {
-		color: '#fff',
-		// This has to be the same size as the maximum width to
-		// prevent clipping
-		strokeWidth: 10,
-		trailWidth: 5,
-		easing: 'easeInOut',
-		trailColor: '#E9E9E9',
-		duration: 1400,
-		text: {
-			autoStyleContainer: false
-		},
-		from: { color: '#5046B9' },
-		to: { color: '#5046B9' },
-		// Set default step function for all animate calls
-		step: function (state, circle) {
-			circle.path.setAttribute('stroke', state.color);
-			circle.path.setAttribute('stroke-width', state.width);
-
-			var value = Math.round(circle.value() * 100);
-			if (value === 0) {
-				circle.setText('');
-			} else {
-				circle.setText(value + "%");
-			}
-		}
-	});
-
-	var barTwo = new ProgressBar.Circle(".progress-circle.two", {
-		color: '#fff',
-		// This has to be the same size as the maximum width to
-		// prevent clipping
-		strokeWidth: 10,
-		trailWidth: 5,
-		easing: 'easeInOut',
-		trailColor: '#E9E9E9',
-		duration: 1400,
-		text: {
-			autoStyleContainer: false
-		},
-		from: { color: '#5046B9' },
-		to: { color: '#5046B9' },
-		// Set default step function for all animate calls
-		step: function (state, circle) {
-			circle.path.setAttribute('stroke', state.color);
-			circle.path.setAttribute('stroke-width', state.width);
-
-			var value = Math.round(circle.value() * 100);
-			if (value === 0) {
-				circle.setText('');
-			} else {
-				circle.setText(value + "%");
-			}
-		}
-	});
-	var barThree = new ProgressBar.Circle(".progress-circle.three", {
-		color: '#fff',
-		// This has to be the same size as the maximum width to
-		// prevent clipping
-		strokeWidth: 10,
-		trailWidth: 5,
-		easing: 'easeInOut',
-		trailColor: '#E9E9E9',
-		duration: 1400,
-		text: {
-			autoStyleContainer: false
-		},
-		from: { color: '#5046B9' },
-		to: { color: '#5046B9' },
-		// Set default step function for all animate calls
-		step: function (state, circle) {
-			circle.path.setAttribute('stroke', state.color);
-			circle.path.setAttribute('stroke-width', state.width);
-
-			var value = Math.round(circle.value() * 100);
-			if (value === 0) {
-				circle.setText('');
-			} else {
-				circle.setText(value + "%");
-			}
-		}
-	});
-	var barFour = new ProgressBar.Circle(".progress-circle.four", {
-		color: '#fff',
-		// This has to be the same size as the maximum width to
-		// prevent clipping
-		strokeWidth: 10,
-		trailWidth: 5,
-		easing: 'easeInOut',
-		trailColor: '#E9E9E9',
-		duration: 1400,
-		text: {
-			autoStyleContainer: false
-		},
-		from: { color: '#5046B9' },
-		to: { color: '#5046B9' },
-		// Set default step function for all animate calls
-		step: function (state, circle) {
-			circle.path.setAttribute('stroke', state.color);
-			circle.path.setAttribute('stroke-width', state.width);
-
-			var value = Math.round(circle.value() * 100);
-			if (value === 0) {
-				circle.setText('');
-			} else {
-				circle.setText(value + "%");
-			}
-		}
-	});
-
-	barOne.animate(0.8);
-	barTwo.animate(0.7);
-	barThree.animate(0.5);
-	barFour.animate(0.9);
-
-
 	// Slider Code
 	$('.slider-content').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: true,
-		fade: false,
-		infinite: false,
-		speed: 1000,
-		// asNavFor: '.slider-thumb',
-		arrows: true,
+		arrows: false,
+		// infinite: false,
+		// speed: 1000,
+		asNavFor: '.slider-thumb',
+		adaptiveHeight: true,
+		arrows: false,
+		fade: true
+	});
+	$('.slider-thumb').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: '.slider-content',
+		dots: false,
+		arrows: false,
+		centerMode: true,
+		focusOnSelect: true,
+		infinite: true,
+		centerMode: true,
+		infinite: true,
+		variableWidth: true,
+		// autoplay: true,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		]
 	});
 
+
+	AOS.init({
+		once: true,
+		duration: 1100,
+		disble: "mobile"
+	});
+
+
+
+	function smoothScroll(target, duration) {
+		var targetSection = document.querySelector(target);
+		var offset = 50;
+		var targetPosition = targetSection.offsetTop - offset;
+		var startPosition = window.pageYOffset;
+		var distance = targetPosition - startPosition;
+		var startTime = null;
+
+		function animation(currentTime) {
+			if (startTime === null) startTime = currentTime;
+			var timeElapsed = currentTime - startTime;
+			var run = ease(timeElapsed, startPosition, distance, duration);
+			window.scrollTo(0, run);
+			if (timeElapsed < duration) requestAnimationFrame(animation);
+		}
+
+		function ease(t, b, c, d) {
+			t /= d / 2;
+			if (t < 1) return c / 2 * t * t + b;
+			t--;
+			return -c / 2 * (t * (t - 2) - 1) + b;
+		}
+
+		requestAnimationFrame(animation);
+	}
+
+	var myLink = document.querySelectorAll('.header .navbar-nav a[href^="#"]');
+	myLink.forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			var target = this.getAttribute('href');
+			var duration = 500; // Set the duration of the scroll animation (in milliseconds)
+			smoothScroll(target, duration);
+		});
+	});
 
 
 

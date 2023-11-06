@@ -16,7 +16,7 @@
 	<div class="wrapper">
 		<!-- Start Header -->
 		<header class="header">
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg" id="navbar-example2">
 				<div class="container-fluid">
 					<button class="btn navbar-toggler d-lg-none" id="navbarToggler" type="button"
 						data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
@@ -40,22 +40,24 @@
 								aria-label="Close"></button>
 						</div>
 						<div class="offcanvas-body">
-							<ul class="navbar-nav mx-auto">
+							<ul class="navbar-nav">
 								<li class="nav-item" data-bs-dismiss="offcanvas">
-									<a class="nav-link active" aria-current="page" href=""
+									<a class="nav-link active" aria-current="page" href="#hero"
 										title="Home"><span>Home</span></a>
 								</li>
 								<li class="nav-item" data-bs-dismiss="offcanvas">
-									<a class="nav-link" href="#" title="About us"><span>About Us</span></a>
+									<a class="nav-link" href="#about-us" title="About us"><span>About Us</span></a>
 								</li>
 								<li class="nav-item" data-bs-dismiss="offcanvas">
-									<a class="nav-link" href="#" title="Services"><span>Services</span></a>
+									<a class="nav-link" href="#services" title="Services"><span>Services</span></a>
 								</li>
 								<li class="nav-item" data-bs-dismiss="offcanvas">
-									<a class="nav-link" href="#" title="Blog "><span>Blog</span></a>
+									<a class="nav-link" href="#blog" title="Blog "><span>Blog</span></a>
 								</li>
 								<li class="nav-item" data-bs-dismiss="offcanvas">
-									<a class="nav-link" href="#" title="Contact Us"><span>Contact Us</span></a>
+									<a class="nav-link" href="#contact-us" title="Contact Us">
+										<span>Contact Us</span>
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -71,295 +73,734 @@
 
 		<!-- Main Content -->
 		<main class="main-content">
-			<div class="hero">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="hero-content">
-								<h2>
-									Choose What Matters To Your <span class="text-primary">Business & Your
-										Customers.</span>
-								</h2>
-								<h5 class="info">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor maecenas nec amet
-									pharetra suspendisse eleifend
-									facilisi. Quis sit aliquam, velit varius euismod scelerisque.
-								</h5>
-								<button type="button" title="Get Started Now" class="btn btn-primary">Get Started
-									Now</button>
+			<section data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
+				<div id="hero">
+					<div class="hero">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="hero-content" data-aos="fade-right">
+										<h2>
+											Choose What Matters To Your <span class="text-primary">Business & Your
+												Customers.</span>
+										</h2>
+										<h5 class="info">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor maecenas nec
+											amet
+											pharetra suspendisse eleifend
+											facilisi. Quis sit aliquam, velit varius euismod scelerisque.
+										</h5>
+										<button type="button" title="Get Started Now" class="btn btn-primary">Get
+											Started
+											Now</button>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="hero-showcase d-flex" data-aos="fade-in">
+										<div class="showcase-inner">
+											<img src="./images/bg-dots.svg" alt="Dots" class="bg-dots-top">
+											<div class="top-left">
+												<img src="./images/hero-showcase-1.svg" alt="Profile">
+												<div class="bg-layer"></div>
+											</div>
+											<div class="top-right">
+												<img src="./images/hero-showcase-2.svg" alt="Profile">
+												<div class="bg-layer"></div>
+											</div>
+										</div>
+										<div class="showcase-inner">
+											<div class="bottom-left">
+												<img src="./images/hero-showcase-3.svg" alt="Profile">
+												<div class="bg-layer"></div>
+											</div>
+											<div class="bottom-right">
+												<img src="./images/hero-showcase-4.svg" alt="Profile">
+												<div class="bg-layer"></div>
+											</div>
+											<img src="./images/bg-dots.svg" alt="Dots" class="bg-dots-bottom">
+										</div>
+
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							<div class="hero-showcase">
-								<div class="showcase-inner">
-									<img src="./images/bg-dots.svg" alt="Dots" class="bg-dots-top">
-									<div class="top-left">
-										<img src="./images/hero-showcase-1.svg" alt="Profile">
-										<div class="bg-layer"></div>
-									</div>
-									<div class="top-right">
-										<img src="./images/hero-showcase-2.svg" alt="Profile">
-										<div class="bg-layer"></div>
-									</div>
-								</div>
-								<div class="showcase-inner">
-									<div class="bottom-left">
-										<img src="./images/hero-showcase-3.svg" alt="Profile">
-										<div class="bg-layer"></div>
-									</div>
-									<div class="bottom-right">
-										<img src="./images/hero-showcase-4.svg" alt="Profile">
-										<div class="bg-layer"></div>
-									</div>
-									<img src="./images/bg-dots.svg" alt="Dots" class="bg-dots-bottom">
-								</div>
+					</div>
 
+					<div class="what-we-do">
+						<div class="container">
+							<h5 class="info-title text-primary" data-aos="fade-right">Our Services</h5>
+							<h2 class="title" data-aos="fade-left">What We Do</h2>
+							<div class="overline" data-aos="fade-up">
+								<span></span>
+								<span class="block"></span>
+								<span class="block"></span>
+								<span></span>
+							</div>
+
+							<div class="row gy-4 gy-md-5">
+								<div class="col-md-6 col-xl-4">
+									<div class="card-outer" data-aos="fade-up" data-aos-delay="0">
+										<div class="img-block" style="background: #E2E2FF;">
+											<img src="./images/ic-card-1.svg" alt="Icon">
+										</div>
+										<div class="card mini-card">
+											<h4 class="card-title">UX Design</h4>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam,
+												nunc,
+												blandit consectetur et dignissim lorem
+												pellentesque proin.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="card-outer" data-aos="fade-up" data-aos-delay="100">
+										<div class="img-block" style="background: #FFEDEA;">
+											<img src="./images/ic-card-2.svg" alt="Icon">
+										</div>
+										<div class="card mini-card">
+											<h4 class="card-title">Game Design</h4>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam,
+												nunc,
+												blandit consectetur et dignissim lorem
+												pellentesque proin.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="card-outer" data-aos="fade-up" data-aos-delay="200">
+										<div class="img-block" style="background: #D3FCFE;">
+											<img src="./images/ic-card-3.svg" alt="Icon">
+										</div>
+										<div class="card mini-card">
+											<h4 class="card-title">Graphic Design</h4>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam,
+												nunc,
+												blandit consectetur et dignissim lorem
+												pellentesque proin.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="card-outer" data-aos="fade-up" data-aos-delay="0">
+										<div class="img-block" style="background: #FFE2F7;">
+											<img src="./images/ic-card-4.svg" alt="Icon">
+										</div>
+										<div class="card mini-card">
+											<h4 class="card-title">Web Design</h4>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam,
+												nunc,
+												blandit consectetur et dignissim lorem
+												pellentesque proin.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="card-outer" data-aos="fade-up" data-aos-delay="100">
+										<div class="img-block" style="background: #E3FFE2;">
+											<img src="./images/ic-card-5.svg" alt="Icon">
+										</div>
+										<div class="card mini-card">
+											<h4 class="card-title">App Development</h4>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam,
+												nunc,
+												blandit consectetur et dignissim lorem
+												pellentesque proin.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="card-outer" data-aos="fade-up" data-aos-delay="200">
+										<div class="img-block" style="background: #FFF7E2;">
+											<img src="./images/ic-card-6.svg" alt="Icon">
+										</div>
+										<div class="card mini-card">
+											<h4 class="card-title">Digital Marketing</h4>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam,
+												nunc,
+												blandit consectetur et dignissim lorem
+												pellentesque proin.
+											</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="what-we-do">
-				<div class="container">
-					<h5 class="info-title text-primary">Our Services</h5>
-					<h2 class="title">What We Do</h2>
-					<div class="overline">
-						<span></span>
-						<span class="block"></span>
-						<span class="block"></span>
-						<span></span>
+				<div class="about-us" id="about-us">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 order-lg-1">
+								<div class="photo-block layer-b-r" data-aos="fade-in">
+									<div class="photo-inner">
+										<img src="./images/bg-dots.svg" alt="Dots" class="bg-dots dir-left">
+										<img src="./images/photo-1.png" alt="Profile" class="profile">
+										<div class="bg-layer"></div>
+										<img src="./images/bg-lines-left-primary.svg" alt="Lines"
+											class="bg-lines dir-left">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 order-lg-0">
+								<div class="about-us-content" data-aos="fade-right">
+									<h5 class="info-title text-primary">ABOUT us</h5>
+									<h2 class="title">Grow your business with our agency</h2>
+									<p class="section-info">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam, nunc,
+										blandit
+										consectetur et dignissim lorem
+										pellentesque proin. Sed aliquam ac, venenatis morbi et a.
+									</p>
+									<ul>
+										<li>
+											<div class="svg-block">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+													class="theme-icon fill" xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_4_5599)">
+														<path
+															d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
+															fill="" />
+													</g>
+													<defs>
+														<clipPath id="clip0_4_5599">
+															<rect width="24" height="24" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</div>
+											Innovative website design
+										</li>
+										<li>
+											<div class="svg-block">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+													class="theme-icon fill" xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_4_5599)">
+														<path
+															d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
+															fill="" />
+													</g>
+													<defs>
+														<clipPath id="clip0_4_5599">
+															<rect width="24" height="24" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</div>
+											UI/UX design with global trends
+										</li>
+										<li>
+											<div class="svg-block">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+													class="theme-icon fill" xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_4_5599)">
+														<path
+															d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
+															fill="" />
+													</g>
+													<defs>
+														<clipPath id="clip0_4_5599">
+															<rect width="24" height="24" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</div>
+											Web and email hosting service
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
 					</div>
+				</div>
 
-					<div class="row gy-5">
-						<div class="col-lg-4">
-							<div class="card-outer">
-								<div class="img-block" style="background: #E2E2FF;">
-									<img src="./images/ic-card-1.svg" alt="Icon">
-								</div>
-								<div class="card mini-card">
-									<h4 class="card-title">UX Design</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam, nunc,
-										blandit consectetur et dignissim lorem
-										pellentesque proin.
-									</p>
+				<div class="capabilities">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="photo-block layer-b-l" data-aos="fade-in">
+									<div class="photo-inner">
+										<img src="./images/bg-dots.svg" alt="Dots" class="bg-dots dir-right">
+										<img src="./images/photo-2.png" alt="Profile" class="profile">
+										<div class="bg-layer"></div>
+										<img src="./images/bg-lines-primary.svg" alt="Lines" class="bg-lines dir-right">
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="card-outer">
-								<div class="img-block" style="background: #FFEDEA;">
-									<img src="./images/ic-card-2.svg" alt="Icon">
-								</div>
-								<div class="card mini-card">
-									<h4 class="card-title">Game Design</h4>
-									<p>
+							<div class="col-lg-6">
+								<div class="capabilities-content" data-aos="fade-left">
+									<h5 class="info-title text-primary">OUR capabilities</h5>
+									<h2 class="title">Forward thinking team of designers and developers</h2>
+									<p class="section-info">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam, nunc,
-										blandit consectetur et dignissim lorem
-										pellentesque proin.
+										blandit
+										consectetur et dignissim lorem
+										pellentesque proin. Sed aliquam ac, venenatis morbi et a.
 									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="card-outer">
-								<div class="img-block" style="background: #D3FCFE;">
-									<img src="./images/ic-card-3.svg" alt="Icon">
-								</div>
-								<div class="card mini-card">
-									<h4 class="card-title">Graphic Design</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam, nunc,
-										blandit consectetur et dignissim lorem
-										pellentesque proin.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="card-outer">
-								<div class="img-block" style="background: #FFE2F7;">
-									<img src="./images/ic-card-4.svg" alt="Icon">
-								</div>
-								<div class="card mini-card">
-									<h4 class="card-title">Web Design</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam, nunc,
-										blandit consectetur et dignissim lorem
-										pellentesque proin.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="card-outer">
-								<div class="img-block" style="background: #E3FFE2;">
-									<img src="./images/ic-card-5.svg" alt="Icon">
-								</div>
-								<div class="card mini-card">
-									<h4 class="card-title">App Development</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam, nunc,
-										blandit consectetur et dignissim lorem
-										pellentesque proin.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="card-outer">
-								<div class="img-block" style="background: #FFF7E2;">
-									<img src="./images/ic-card-6.svg" alt="Icon">
-								</div>
-								<div class="card mini-card">
-									<h4 class="card-title">Digital Marketing</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam, nunc,
-										blandit consectetur et dignissim lorem
-										pellentesque proin.
-									</p>
+
+									<div class="progress-wrapper">
+										<div class="row">
+											<div class="col-6 col-md-3 col-lg-6 col-xl-3">
+												<div class="progress-block">
+													<div class="progress-circle one"></div>
+													<div class="p-info">Software Development</div>
+												</div>
+											</div>
+											<div class="col-6 col-md-3 col-lg-6 col-xl-3">
+												<div class="progress-block">
+													<div class="progress-circle two"></div>
+													<div class="p-info">Graphic Design</div>
+												</div>
+											</div>
+											<div class="col-6 col-md-3 col-lg-6 col-xl-3">
+												<div class="progress-block">
+													<div class="progress-circle three"></div>
+													<div class="p-info">Game Design</div>
+												</div>
+											</div>
+											<div class="col-6 col-md-3 col-lg-6 col-xl-3">
+												<div class="progress-block">
+													<div class="progress-circle four"></div>
+													<div class="p-info">App Development</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-
-			<div class="about-us">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="about-us-content">
-								<h5 class="info-title text-primary">ABOUT us</h5>
-								<h2 class="title">Grow your business with our agency</h2>
-								<p class="section-info">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam, nunc,
-									blandit
-									consectetur et dignissim lorem
-									pellentesque proin. Sed aliquam ac, venenatis morbi et a.
-								</p>
-
-								<ul>
-									<li>
-										<div class="svg-block">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-												class="theme-icon fill" xmlns="http://www.w3.org/2000/svg">
-												<g clip-path="url(#clip0_4_5599)">
-													<path
-														d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
-														fill="" />
-												</g>
-												<defs>
-													<clipPath id="clip0_4_5599">
-														<rect width="24" height="24" fill="white" />
-													</clipPath>
-												</defs>
-											</svg>
+				<div id="services">
+					<div class="our-services">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-md-4">
+									<h5 class="info-title text-warning" data-aos="fade-right">OUR Services</h5>
+									<h2 class="title text-light" data-aos="fade-right">We Deliver Excellent Services
+									</h2>
+								</div>
+								<div class="col-md-8">
+									<div class="row g-4 g-lg-0 inner-row" data-module="countup">
+										<div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+											<img src="./images/ic-services-1.svg" alt="Icon" class="data-icon">
+											<h3 class="service-data" data-countup-number="120">120</h3>
+											<h5 class="data-title">Top Experts</h5>
 										</div>
-										Innovative website design
+										<div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+											<img src="./images/ic-services-2.svg" alt="Icon" class="data-icon">
+											<h3 class="service-data" data-countup-number="500">500</h3>
+											<h5 class="data-title">Strategies</h5>
+										</div>
+										<div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+											<img src="./images/ic-services-3.svg" alt="Icon" class="data-icon">
+											<h3 class="service-data" data-countup-number="347">347</h3>
+											<h5 class="data-title">Great Results</h5>
+										</div>
+										<div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+											<img src="./images/ic-services-4.svg" alt="Icon" class="data-icon">
+											<h3 class="service-data" data-countup-number="400">400</h3>
+											<h5 class="data-title">High Rankings</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product">
+						<div class="container">
+							<h5 class="info-title text-primary" data-aos="fade-right">Our CASE STUDy</h5>
+							<h2 class="title" data-aos="fade-left">Our Recent Projects</h2>
+							<div class="overline" data-aos="fade-right">
+								<span></span>
+								<span class="block"></span>
+								<span class="block"></span>
+								<span></span>
+							</div>
+
+							<div class="outer" data-aos="fade-in">
+								<div class="menu-outer">
+									<ul class="filter-menu">
+										<li data-target="all" class="current">All</li>
+										<li data-target="ux-design">UX Design</li>
+										<li data-target="web-design">Web Design</li>
+										<li data-target="app-development">App Development</li>
+										<li data-target="game-design">Game Design</li>
+										<li data-target="graphic-design">Graphic Design</li>
+									</ul>
+								</div>
+
+								<ul class="filter-item">
+									<li data-item="web-design" class="filter-li grid-item">
+										<div>
+											<div class="list-block">
+												<img src="./images/project-1.svg" alt="Project Preview">
+												<div class="block-inner">
+													<span>Web Design</span>
+
+													<h4>Training Plan Development</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id erat
+														posuere
+														in neque.</p>
+													<a href="#" title="Read More">Read More <img
+															src="./images/ic-arrow-right.svg" alt="Arrow"></a>
+												</div>
+											</div>
+										</div>
 									</li>
-									<li>
-										<div class="svg-block">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-												class="theme-icon fill" xmlns="http://www.w3.org/2000/svg">
-												<g clip-path="url(#clip0_4_5599)">
-													<path
-														d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
-														fill="" />
-												</g>
-												<defs>
-													<clipPath id="clip0_4_5599">
-														<rect width="24" height="24" fill="white" />
-													</clipPath>
-												</defs>
-											</svg>
+									<!-- -- 1 ---  -->
+									<li data-item="game-design" class="filter-li grid-item">
+										<div>
+											<div class="list-block">
+												<img src="./images/project-5.svg" alt="Project Preview">
+												<div class="block-inner">
+													<span>Geame Design</span>
+
+													<h4>Training Plan Development</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id erat
+														posuere
+														in neque.</p>
+													<a href="#" title="Read More">Read More <img
+															src="./images/ic-arrow-right.svg" alt="Arrow"></a>
+												</div>
+											</div>
 										</div>
-										UI/UX design with global trends
 									</li>
-									<li>
-										<div class="svg-block">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-												class="theme-icon fill" xmlns="http://www.w3.org/2000/svg">
-												<g clip-path="url(#clip0_4_5599)">
-													<path
-														d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
-														fill="" />
-												</g>
-												<defs>
-													<clipPath id="clip0_4_5599">
-														<rect width="24" height="24" fill="white" />
-													</clipPath>
-												</defs>
-											</svg>
+
+									<!-- -- 2 ---  -->
+									<li data-item="app-development" class="filter-li grid-item">
+										<div>
+											<div class="list-block">
+												<img src="./images/project-2.svg" alt="Project Preview">
+												<div class="block-inner">
+													<span>App Development</span>
+
+													<h4>Project</h4>
+													<p>Lorem ipsum dolor</p>
+													<a href="#" title="Read More">Read More <img
+															src="./images/ic-arrow-right.svg" alt="Arrow"></a>
+												</div>
+											</div>
 										</div>
-										Web and email hosting service
+									</li>
+
+									<li data-item="app-development" class="filter-li grid-item">
+										<div>
+											<div class="list-block">
+												<img src="./images/project-4.svg" alt="Project Preview">
+												<div class="block-inner">
+													<span>App Development</span>
+
+													<h4>Email Automation</h4>
+													<p>Lorem ipsum dolor sit </p>
+													<a href="#" title="Read More">Read More <img
+															src="./images/ic-arrow-right.svg" alt="Arrow"></a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li data-item="ux-design" class="filter-li grid-item">
+										<div>
+											<div class="list-block">
+												<img src="./images/project-6.svg" alt="Project Preview">
+												<div class="block-inner">
+													<span>UX Design</span>
+
+													<h4>Figma Design</h4>
+													<p>Lorem ipsum </p>
+													<a href="#" title="Read More">Read More <img
+															src="./images/ic-arrow-right.svg" alt="Arrow"></a>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<!-- -- 3 ---  -->
+									<li data-item="app-development" class="filter-li grid-item">
+										<div>
+											<div class="list-block">
+												<img src="./images/project-3.svg" alt="Project Preview">
+												<div class="block-inner">
+													<span>App Development</span>
+
+													<h4>Training Plan Development</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id erat
+														posuere
+														in neque.</p>
+													<a href="#" title="Read More">Read More <img
+															src="./images/ic-arrow-right.svg" alt="Arrow"></a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li data-item="web-design" class="filter-li grid-item">
+										<div>
+											<div class="list-block">
+												<img src="./images/project-7.svg" alt="Project Preview">
+												<div class="block-inner">
+													<span>Web Design</span>
+
+													<h4>Training Plan Development</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id erat
+														posuere
+														in neque.</p>
+													<a href="#" title="Read More">Read More <img
+															src="./images/ic-arrow-right.svg" alt="Arrow"></a>
+												</div>
+											</div>
+										</div>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							<div class="photo-block layer-b-r">
-								<div class="photo-inner">
-									<img src="./images/bg-dots.svg" alt="Dots" class="bg-dots dir-left">
-									<img src="./images/photo-1.png" alt="Profile" class="profile">
-									<div class="bg-layer"></div>
-									<img src="./images/bg-lines-left-primary.svg" alt="Lines" class="bg-lines dir-left">
-								</div>
-							</div>
-						</div>
 					</div>
 
-				</div>
-			</div>
-
-
-			<div class="capabilities">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="photo-block layer-b-l">
-								<div class="photo-inner">
-									<img src="./images/bg-dots.svg" alt="Dots" class="bg-dots dir-right">
-									<img src="./images/photo-2.png" alt="Profile" class="profile">
-									<div class="bg-layer"></div>
-									<img src="./images/bg-lines-primary.svg" alt="Lines" class="bg-lines dir-right">
-								</div>
+					<div class="testimonials">
+						<div class="container">
+							<h5 class="info-title text-primary" data-aos="fade-right">Our Testimonials</h5>
+							<h2 class="title" data-aos="fade-left">What Our Client Says</h2>
+							<div class="overline" data-aos="fade-right">
+								<span></span>
+								<span class="block"></span>
+								<span class="block"></span>
+								<span></span>
 							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="capabilities-content">
-								<h5 class="info-title text-primary">OUR capabilities</h5>
-								<h2 class="title">Forward thinking team of designers and developers</h2>
-								<p class="section-info">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam, nunc,
-									blandit
-									consectetur et dignissim lorem
-									pellentesque proin. Sed aliquam ac, venenatis morbi et a.
-								</p>
 
-								<div class="progress-wrapper">
-									<div class="row">
-										<div class="col-6 col-xl-3">
-											<div class="progress-block">
-												<div class="progress-circle one"></div>
-											</div>
+							<div class="slider-container" data-aos="fade-in">
+								<img src="./images/ic-slider-chat.svg" alt="Chat Icon" class="chat-icon">
+								<img src="./images/bg-lines-primary.svg" alt="Icon" class="bg-line">
+								<div class="slider slider-content">
+									<div class="slider-card">
+										<div class="slider-inner">
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
+												leo sit et sit. Sed odio interdum a ac integer ornare.
+												Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar
+												risus.”
+											</p>
+
+											<h4 class="username">Phillip Levin </h4>
+											<h6 class="user-position">CEO / Creative IT</h6>
 										</div>
-										<div class="col-6 col-xl-3">
-											<div class="progress-block">
-												<div class="progress-circle two"></div>
-											</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
 										</div>
-										<div class="col-6 col-xl-3">
-											<div class="progress-block">
-												<div class="progress-circle three"></div>
-											</div>
+									</div>
+									<div class="slider-card">
+										<div class="slider-inner">
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis”
+											</p>
+
+											<h4 class="username">Jason March </h4>
+											<h6 class="user-position">Creative IT</h6>
 										</div>
-										<div class="col-6 col-xl-3">
-											<div class="progress-block">
-												<div class="progress-circle four"></div>
-											</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
+										</div>
+									</div>
+									<div class="slider-card">
+										<div class="slider-inner">
+
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
+												leo sit et sit. Sed odio interdum a ac integer ornare.”
+											</p>
+
+											<h4 class="username">Michale John </h4>
+											<h6 class="user-position">CEO / Creative IT</h6>
+										</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
+										</div>
+									</div>
+									<div class="slider-card">
+										<div class="slider-inner">
+
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
+												leo sit et sit. Sed odio interdum a ac integer ornare.
+												Hendrerit malesuada”
+											</p>
+
+											<h4 class="username">Mr. Shrikaant </h4>
+											<h6 class="user-position">Head Creative IT</h6>
+										</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
+										</div>
+									</div>
+									<div class="slider-card">
+										<div class="slider-inner">
+
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
+												leo sit et sit. Sed odio interdum a ac integer ornare.
+												Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar
+												risus.”
+											</p>
+
+											<h4 class="username">Michale John </h4>
+											<h6 class="user-position">CEO / Creative IT</h6>
+										</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
+										</div>
+									</div>
+
+									<div class="slider-card">
+										<div class="slider-inner">
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
+												leo sit et sit. Sed odio interdum a ac integer ornare.
+												Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar
+												risus.”
+											</p>
+
+											<h4 class="username">Phillip Levin </h4>
+											<h6 class="user-position">CEO / Creative IT</h6>
+										</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
+										</div>
+									</div>
+									<div class="slider-card">
+										<div class="slider-inner">
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
+												leo sit et sit. Sed odio interdum a ac integer ornare.
+												Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar
+												risus.”
+											</p>
+
+											<h4 class="username">Jason March </h4>
+											<h6 class="user-position">Creative IT</h6>
+										</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
+										</div>
+									</div>
+									<div class="slider-card">
+										<div class="slider-inner">
+
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
+												leo sit et sit. Sed odio interdum a ac integer ornare.
+												Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar
+												risus.”
+											</p>
+
+											<h4 class="username">Michale John </h4>
+											<h6 class="user-position">CEO / Creative IT</h6>
+										</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
+										</div>
+									</div>
+									<div class="slider-card">
+										<div class="slider-inner">
+
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
+												leo sit et sit. Sed odio interdum a ac integer ornare.
+												Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar
+												risus.”
+											</p>
+
+											<h4 class="username">Mr. Shrikaant </h4>
+											<h6 class="user-position">Head Creative IT</h6>
+										</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
+										</div>
+									</div>
+									<div class="slider-card">
+										<div class="slider-inner">
+
+											<p class="slider-text">
+												“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
+												leo sit et sit. Sed odio interdum a ac integer ornare.
+												Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar
+												risus.”
+											</p>
+
+											<h4 class="username">Michale John </h4>
+											<h6 class="user-position">CEO / Creative IT</h6>
+										</div>
+										<div class='triangle-wrap'>
+											<div class='triangle'></div>
+										</div>
+									</div>
+								</div>
+								<img src="./images/bg-dots.svg" alt="Icon" class="bg-dots">
+							</div>
+
+							<div class="slider-image-container" data-aos="fade-in">
+								<div class="slider slider-thumb">
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user1.png" alt="Profile">
+										</div>
+									</div>
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user2.png" alt="Profile">
+										</div>
+									</div>
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user5.png" alt="Profile">
+										</div>
+									</div>
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user3.png" alt="Profile">
+										</div>
+									</div>
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user4.png" alt="Profile">
+										</div>
+									</div>
+
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user1.png" alt="Profile">
+										</div>
+									</div>
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user2.png" alt="Profile">
+										</div>
+									</div>
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user5.png" alt="Profile">
+										</div>
+									</div>
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user3.png" alt="Profile">
+										</div>
+									</div>
+									<div class="img-outer">
+										<div class="img-inner">
+											<img src="./images/slider-user4.png" alt="Profile">
 										</div>
 									</div>
 								</div>
@@ -367,381 +808,359 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="our-services">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-md-4">
-							<h5 class="info-title text-warning">OUR Services</h5>
-							<h2 class="title text-light">We Deliver Excellent Services</h2>
+				<div class="blog" id="blog">
+					<div class="container">
+						<h5 class="info-title text-primary" data-aos="fade-right">Our Blog</h5>
+						<h2 class="title" data-aos="fade-left">Every Single Update From Here</h2>
+						<div class="overline" data-aos="fade-right">
+							<span></span>
+							<span class="block"></span>
+							<span class="block"></span>
+							<span></span>
 						</div>
-						<div class="col-md-8">
-							<div class="row inner-row">
-								<div class="col-6 col-lg-3">
-									<img src="./images/ic-services-1.svg" alt="Icon" class="data-icon">
-									<h3 class="service-data">120</h3>
-									<h5 class="data-title">Top Experts</h5>
-								</div>
-								<div class="col-6 col-lg-3">
-									<img src="./images/ic-services-2.svg" alt="Icon" class="data-icon">
-									<h3 class="service-data">500</h3>
-									<h5 class="data-title">Strategies</h5>
-								</div>
-								<div class="col-6 col-lg-3">
-									<img src="./images/ic-services-3.svg" alt="Icon" class="data-icon">
-									<h3 class="service-data">347</h3>
-									<h5 class="data-title">Great Results</h5>
-								</div>
-								<div class="col-6 col-lg-3">
-									<img src="./images/ic-services-4.svg" alt="Icon" class="data-icon">
-									<h3 class="service-data">400</h3>
-									<h5 class="data-title">High Rankings</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="product" id="products">
-				<div class="container">
-					<h5 class="info-title text-primary">Our CASE STUDy</h5>
-					<h2 class="title">Our Recent Projects</h2>
-					<div class="overline">
-						<span></span>
-						<span class="block"></span>
-						<span class="block"></span>
-						<span></span>
-					</div>
-
-					<div class="outer">
-						<div class="menu-outer">
-							<ul class="filter-menu">
-								<li data-target="all" class="current">All</li>
-								<li data-target="ux-design">UX Design</li>
-								<li data-target="web-design">Web Design</li>
-								<li data-target="app-development">App Development</li>
-								<li data-target="game-design">Game Design</li>
-								<li data-target="graphic-design">Graphic Design</li>
-							</ul>
-						</div>
-
-						<ul class="filter-item grid">
-							<li data-item="web-design" class="filter-li grid-item">
-								<div>
-									<a href="#"><img src="./images/project-1.svg" alt="Project Preview"></a>
-								</div>
-							</li>
-							<li data-item="app-development" class="filter-li grid-item grid-item--height280">
-								<div>
-									<a href="#"><img src="./images/project-2.svg" alt="Project Preview"></a>
-								</div>
-							</li>
-							<li data-item="game-design" class="filter-li grid-item">
-								<div>
-									<a href="#"><img src="./images/project-3.svg" alt="Project Preview"></a>
-								</div>
-							</li>
-							<li data-item="app-development" class="filter-li grid-item grid-item--height280">
-								<div>
-									<a href="#"><img src="./images/project-4.svg" alt="Project Preview"></a>
-								</div>
-							</li>
-							<li data-item="game-design" class="filter-li grid-item">
-								<div>
-									<a href="#"><img src="./images/project-5.svg" alt="Project Preview"></a>
-								</div>
-							</li>
-
-							<li data-item="web-design" class="filter-li grid-item">
-								<div>
-									<a href="#"><img src="./images/project-7.svg" alt="Project Preview"></a>
-								</div>
-							</li>
-							<li data-item="web-design" class="filter-li grid-item grid-item--height280">
-								<div>
-									<a href="#"><img src="./images/project-6.svg" alt="Project Preview"></a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="testimonials">
-				<div class="container">
-					<h5 class="info-title text-primary">Our Testimonials</h5>
-					<h2 class="title">What Our Client Says</h2>
-					<div class="overline">
-						<span></span>
-						<span class="block"></span>
-						<span class="block"></span>
-						<span></span>
-					</div>
-
-					<div class="slider-container">
-						<div class="slider slider-content">
-							<div class="slider-card">
-								<p class="slider-text">
-									“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-									leo sit et sit. Sed odio interdum a ac integer ornare.
-									Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar risus.”
-								</p>
-
-								<h4 class="username">Phillip Levin</h4>
-								<h6 class="user-position">CEO / Creative IT</h6>
-							</div>
-							<div class="slider-card">
-								<p class="slider-text">
-									“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-									leo sit et sit. Sed odio interdum a ac integer ornare.
-									Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar risus.”
-								</p>
-
-								<h4 class="username">Jason March</h4>
-								<h6 class="user-position">Creative IT</h6>
-							</div>
-							<div class="slider-card">
-								<p class="slider-text">
-									“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-									leo sit et sit. Sed odio interdum a ac integer ornare.
-									Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar risus.”
-								</p>
-
-								<h4 class="username">Michale John</h4>
-								<h6 class="user-position">CEO / Creative IT</h6>
-							</div>
-							<div class="slider-card">
-								<p class="slider-text">
-									“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-									leo sit et sit. Sed odio interdum a ac integer ornare.
-									Hendrerit malesuada mattis amet, non pulvinar. Potenti et nunc pulvinar risus.”
-								</p>
-
-								<h4 class="username">Mr. Shrikaant</h4>
-								<h6 class="user-position">Head Creative IT</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="blog">
-				<div class="container">
-					<h5 class="info-title text-primary">Our Blog</h5>
-					<h2 class="title">Every Single Update From Here</h2>
-					<div class="overline">
-						<span></span>
-						<span class="block"></span>
-						<span class="block"></span>
-						<span></span>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-							<div class="card blog-card">
-								<div class="card-bg" style="background-image: url('./images/blog-1.png');">
-								</div>
-								<div class="card-content">
-									<h4 class="card-title">
-										35 Stellar Graphic Design Blogs to Keep YouEducated and Inspired
-									</h4>
-									<div class="row inner-row">
-										<div class="col">
-											<div class="info-wrap">
-												<img src="./images//ic-card-person.svg" alt="Icon">
-												<h6>Wade Warren</h6>
-											</div>
-										</div>
-										<div class="col">
-											<div class="info-wrap">
-												<img src="./images//ic-card-timer.svg" alt="Icon">
-												<h6>January 25,2021</h6>
-											</div>
-										</div>
-										<div class="col">
-											<div class="info-wrap">
-												<img src="./images//ic-card-message.svg" alt="Icon">
-												<h6>10 Comment</h6>
-											</div>
-										</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card blog-card" data-aos="fade-up" data-aos-delay="100">
+									<div class="card-bg" style="background-image: url('./images/blog-1.png');">
 									</div>
-									<p class="card-info">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio nascetur pulvinar
-										dolor, facilisis posuere elit, dignissim
-										aliquet consequat. Volutpat id aliquet id est amet sit amet.
-									</p>
+									<div class="card-content">
+										<h4 class="card-title">
+											35 Stellar Graphic Design Blogs to Keep YouEducated and Inspired
+										</h4>
+										<div class="row inner-row">
+											<div class="col">
+												<div class="info-wrap">
+													<img src="./images//ic-card-person.svg" alt="Icon">
+													<h6>Wade Warren</h6>
+												</div>
+											</div>
+											<div class="col">
+												<div class="info-wrap">
+													<img src="./images//ic-card-timer.svg" alt="Icon">
+													<h6>January 25,2021</h6>
+												</div>
+											</div>
+											<div class="col">
+												<div class="info-wrap">
+													<img src="./images//ic-card-message.svg" alt="Icon">
+													<h6>10 Comment</h6>
+												</div>
+											</div>
+										</div>
+										<p class="card-info">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio nascetur
+											pulvinar
+											dolor, facilisis posuere elit, dignissim
+											aliquet consequat. Volutpat id aliquet id est amet sit amet.
+										</p>
 
-									<a href="#" title="Read More" class="read-more-link">
-										Read More
-										<img src="./images/ic-card-arrow-right.svg" alt="Arrow">
-									</a>
+										<a href="#" title="Read More" class="read-more-link">
+											Read More
+											<img src="./images/ic-card-arrow-right.svg" alt="Arrow">
+										</a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="card blog-card">
-								<div class="card-bg" style="background-image: url('./images/blog-2.png');">
-								</div>
-								<div class="card-content">
-									<h4 class="card-title">
-										Ridiculously powerful 2021 iPad Pro may drop this month
-									</h4>
-									<div class="row inner-row">
-										<div class="col">
-											<div class="info-wrap">
-												<img src="./images//ic-card-person.svg" alt="Icon">
-												<h6>Wade Warren</h6>
-											</div>
-										</div>
-										<div class="col">
-											<div class="info-wrap">
-												<img src="./images//ic-card-timer.svg" alt="Icon">
-												<h6>January 25,2021</h6>
-											</div>
-										</div>
-										<div class="col">
-											<div class="info-wrap">
-												<img src="./images//ic-card-message.svg" alt="Icon">
-												<h6>10 Comment</h6>
-											</div>
-										</div>
+							<div class="col-md-4">
+								<div class="card blog-card" data-aos="fade-up" data-aos-delay="200">
+									<div class="card-bg" style="background-image: url('./images/blog-2.png');">
 									</div>
-									<p class="card-info">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio nascetur pulvinar
-										dolor, facilisis posuere elit, dignissim
-										aliquet consequat. Volutpat id aliquet id est amet sit amet.
-									</p>
+									<div class="card-content">
+										<h4 class="card-title">
+											Ridiculously powerful 2021 iPad Pro may drop this month
+										</h4>
+										<div class="row inner-row">
+											<div class="col">
+												<div class="info-wrap">
+													<img src="./images//ic-card-person.svg" alt="Icon">
+													<h6>Wade Warren</h6>
+												</div>
+											</div>
+											<div class="col">
+												<div class="info-wrap">
+													<img src="./images//ic-card-timer.svg" alt="Icon">
+													<h6>January 25,2021</h6>
+												</div>
+											</div>
+											<div class="col">
+												<div class="info-wrap">
+													<img src="./images//ic-card-message.svg" alt="Icon">
+													<h6>10 Comment</h6>
+												</div>
+											</div>
+										</div>
+										<p class="card-info">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio nascetur
+											pulvinar
+											dolor, facilisis posuere elit, dignissim
+											aliquet consequat. Volutpat id aliquet id est amet sit amet.
+										</p>
 
-									<a href="#" title="Read More" class="read-more-link">
-										Read More
-										<img src="./images/ic-card-arrow-right.svg" alt="Arrow">
-									</a>
+										<a href="#" title="Read More" class="read-more-link">
+											Read More
+											<img src="./images/ic-card-arrow-right.svg" alt="Arrow">
+										</a>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="col-md-4">
-							<div class="card blog-card">
-								<div class="card-bg" style="background-image: url('./images/blog-3.png');">
-								</div>
-								<div class="card-content">
-									<h4 class="card-title">
-										Memphis Design: the defining look of the 1980s
-									</h4>
-									<div class="row inner-row">
-										<div class="col">
-											<div class="info-wrap">
-												<img src="./images//ic-card-person.svg" alt="Icon">
-												<h6>Wade Warren</h6>
-											</div>
-										</div>
-										<div class="col">
-											<div class="info-wrap">
-												<img src="./images//ic-card-timer.svg" alt="Icon">
-												<h6>January 25,2021</h6>
-											</div>
-										</div>
-										<div class="col">
-											<div class="info-wrap">
-												<img src="./images//ic-card-message.svg" alt="Icon">
-												<h6>10 Comment</h6>
-											</div>
-										</div>
+							<div class="col-md-4">
+								<div class="card blog-card" data-aos="fade-up" data-aos-delay="300">
+									<div class="card-bg" style="background-image: url('./images/blog-3.png');">
 									</div>
-									<p class="card-info">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio nascetur pulvinar
-										dolor, facilisis posuere elit, dignissim
-										aliquet consequat. Volutpat id aliquet id est amet sit amet.
-									</p>
+									<div class="card-content">
+										<h4 class="card-title">
+											Memphis Design: the defining look of the 1980s
+										</h4>
+										<div class="row inner-row">
+											<div class="col">
+												<div class="info-wrap">
+													<img src="./images//ic-card-person.svg" alt="Icon">
+													<h6>Wade Warren</h6>
+												</div>
+											</div>
+											<div class="col">
+												<div class="info-wrap">
+													<img src="./images//ic-card-timer.svg" alt="Icon">
+													<h6>January 25,2021</h6>
+												</div>
+											</div>
+											<div class="col">
+												<div class="info-wrap">
+													<img src="./images//ic-card-message.svg" alt="Icon">
+													<h6>10 Comment</h6>
+												</div>
+											</div>
+										</div>
+										<p class="card-info">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio nascetur
+											pulvinar
+											dolor, facilisis posuere elit, dignissim
+											aliquet consequat. Volutpat id aliquet id est amet sit amet.
+										</p>
 
-									<a href="#" title="Read More" class="read-more-link">
-										Read More
-										<img src="./images/ic-card-arrow-right.svg" alt="Arrow">
-									</a>
+										<a href="#" title="Read More" class="read-more-link">
+											Read More
+											<img src="./images/ic-card-arrow-right.svg" alt="Arrow">
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
 
-			<div class="newsletter">
-				<div class="newsletter-content">
-					<h5 class="info-title text-primary">Subscribe newsletter</h5>
-					<h2 class="title">Let’s Stay In Touch</h2>
+				<div class="newsletter" id="contact-us">
+					<div class="newsletter-content">
+						<img src="./images/bg-line-white.svg" alt="Dots" class="bg-line">
+						<h5 class="info-title text-primary" data-aos="fade-left">Subscribe newsletter</h5>
+						<h2 class="title" data-aos="fade-right">Let’s Stay In Touch</h2>
 
-					<div class="form-block">
-						<input type="text" class="form-control" placeholder="Enter Your Name">
-						<button class="btn btn-primary large">Subscribe Now</button>
+						<div class="form-block">
+							<input type="text" class="form-control" placeholder="Enter Your Name">
+							<button class="btn btn-primary large">Subscribe Now</button>
+						</div>
+						<img src="./images/bg-dots.svg" alt="Dots" class="bg-dots">
 					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 		<!-- End Main Content -->
+		<!-- Start Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<a href="#" class="logo" title="Digiency"><img src="images/logo-white.svg" alt="Digiency"></a>
+					</div>
+					<div class="col-lg-2 col-sm-4" data-aos="fade-up" data-aos-delay="100">
+						<div>
+							<h5 class="footer-title">Quick Links</h5>
+							<a href="#" title="Home">Home</a>
+							<a href="#" title="Service">Service</a>
+							<a href="#" title="Gallery">Gallery</a>
+							<a href="#" title="Blog">Blog</a>
+							<a href="#" title="About Us">About Us</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-4" data-aos="fade-up" data-aos-delay="200">
+						<div>
+							<h5 class="footer-title">Explore</h5>
+							<a href="#" title="Resources">Resources</a>
+							<a href="#" title="Careers">Careers</a>
+							<a href="#" title="Community">Community</a>
+							<a href="#" title="Help">Help</a>
+							<a href="#" title="Chat with us">Chat with us</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-4" data-aos="fade-up" data-aos-delay="300">
+						<div>
+							<h5 class="footer-title">More</h5>
+							<a href="#" title="Terms & Condition">Terms & Condition</a>
+							<a href="#" title="Privacy Policy">Privacy Policy</a>
+							<a href="#" title="FAQ">FAQ</a>
+							<a href="#" title="Sitemap">Sitemap</a>
+							<a href="#" title="Help">Help</a>
+						</div>
+					</div>
+					<div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+						<div class="contact-us" data-aos="fade-up">
+							<h5 class="footer-title">Contact Us</h5>
+							<a href="#"><img src="images/location-ic.svg" alt="Icon">
+								2750 Quadra Street , Park Area,
+								Victoria, Canada.
+							</a>
+							<a href="tel:+0001245687"><img src="images/call-ic.svg" alt="Icon"> +(00) 01245687</a>
+							<a href="mailto:support@company.com"><img src="images/mail-ic.svg"
+									alt="Icon">support@company.com</a>
+						</div>
+					</div>
+				</div>
+				<p class="copyright" data-aos="fade-in">
+					Copyright &copy; 2021 Company All Rights Reserved
+				</p>
+		</footer>
+		<!-- End Footer -->
 	</div>
 
-	<!-- Start Footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
-					<a href="#" class="logo" title="Digiency"><img src="images/logo-white.svg" alt="Digiency"></a>
-				</div>
-				<div class="col-lg-2 col-sm-4">
-					<divxF>
-						<h5 class="footer-title">Quick Links</h5>
-						<a href="#" title="Home">Home</a>
-						<a href="#" title="Service">Service</a>
-						<a href="#" title="Gallery">Gallery</a>
-						<a href="#" title="Blog">Blog</a>
-						<a href="#" title="About Us">About Us</a>
-				</div>
-				<div class="col-lg-2 col-sm-4">
-					<div>
-						<h5 class="footer-title">Explore</h5>
-						<a href="#" title="Resources">Resources</a>
-						<a href="#" title="Careers">Careers</a>
-						<a href="#" title="Community">Community</a>
-						<a href="#" title="Help">Help</a>
-						<a href="#" title="Chat with us">Chat with us</a>
-					</div>
-				</div>
-				<div class="col-lg-2 col-sm-4">
-					<div>
-						<h5 class="footer-title">More</h5>
-						<a href="#" title="Terms & Condition">Terms & Condition</a>
-						<a href="#" title="Privacy Policy">Privacy Policy</a>
-						<a href="#" title="FAQ">FAQ</a>
-						<a href="#" title="Sitemap">Sitemap</a>
-						<a href="#" title="Help">Help</a>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="contact-us" data-aos="fade-up">
-						<h5 class="footer-title">Contact Us</h5>
-						<a href="#"><img src="images/location-ic.svg" alt="Icon">
-							2750 Quadra Street , Park Area,
-							Victoria, Canada.
-						</a>
-						<a href="tel:+0001245687"><img src="images/call-ic.svg" alt="Icon"> +(00) 01245687</a>
-						<a href="mailto:support@company.com"><img src="images/mail-ic.svg"
-								alt="Icon">support@company.com</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<p class="copyright">
-			Copyright &copy; 2021 Company All Rights Reserved
-		</p>
-	</footer>
-	<!-- End Footer -->
 
 	<!-- JavaScripts -->
 	<script src="js/main.js"></script>
-	<!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script>
+		var barOne = new ProgressBar.Circle(".progress-circle.one", {
+			color: '#fff',
+			// This has to be the same size as the maximum width to
+			// prevent clipping
+			strokeWidth: 10,
+			trailWidth: 5,
+			easing: 'easeInOut',
+			trailColor: '#E9E9E9',
+			duration: 1400,
+			text: {
+				autoStyleContainer: false
+			},
+			from: { color: '#5046B9' },
+			to: { color: '#5046B9' },
+			// Set default step function for all animate calls
+			step: function (state, circle) {
+				circle.path.setAttribute('stroke', state.color);
+				circle.path.setAttribute('stroke-width', state.width);
+
+				var value = Math.round(circle.value() * 100);
+				if (value === 0) {
+					circle.setText('');
+				} else {
+					circle.setText(value + "%");
+				}
+			}
+		});
+		var barTwo = new ProgressBar.Circle(".progress-circle.two", {
+			color: '#fff',
+			// This has to be the same size as the maximum width to
+			// prevent clipping
+			strokeWidth: 10,
+			trailWidth: 5,
+			easing: 'easeInOut',
+			trailColor: '#E9E9E9',
+			duration: 1400,
+			text: {
+				autoStyleContainer: false
+			},
+			from: { color: '#5046B9' },
+			to: { color: '#5046B9' },
+			// Set default step function for all animate calls
+			step: function (state, circle) {
+				circle.path.setAttribute('stroke', state.color);
+				circle.path.setAttribute('stroke-width', state.width);
+
+				var value = Math.round(circle.value() * 100);
+				if (value === 0) {
+					circle.setText('');
+				} else {
+					circle.setText(value + "%");
+				}
+			}
+		});
+		var barThree = new ProgressBar.Circle(".progress-circle.three", {
+			color: '#fff',
+			// This has to be the same size as the maximum width to
+			// prevent clipping
+			strokeWidth: 10,
+			trailWidth: 5,
+			easing: 'easeInOut',
+			trailColor: '#E9E9E9',
+			duration: 1400,
+			text: {
+				autoStyleContainer: false
+			},
+			from: { color: '#5046B9' },
+			to: { color: '#5046B9' },
+			// Set default step function for all animate calls
+			step: function (state, circle) {
+				circle.path.setAttribute('stroke', state.color);
+				circle.path.setAttribute('stroke-width', state.width);
+
+				var value = Math.round(circle.value() * 100);
+				if (value === 0) {
+					circle.setText('');
+				} else {
+					circle.setText(value + "%");
+				}
+			}
+		});
+		var barFour = new ProgressBar.Circle(".progress-circle.four", {
+			color: '#fff',
+			// This has to be the same size as the maximum width to
+			// prevent clipping
+			strokeWidth: 10,
+			trailWidth: 5,
+			easing: 'easeInOut',
+			trailColor: '#E9E9E9',
+			duration: 1400,
+			text: {
+				autoStyleContainer: false
+			},
+			from: { color: '#5046B9' },
+			to: { color: '#5046B9' },
+			// Set default step function for all animate calls
+			step: function (state, circle) {
+				circle.path.setAttribute('stroke', state.color);
+				circle.path.setAttribute('stroke-width', state.width);
+
+				var value = Math.round(circle.value() * 100);
+				if (value === 0) {
+					circle.setText('');
+				} else {
+					circle.setText(value + "%");
+				}
+			}
+		});
+
+		// On Load Page Visible
+		window.addEventListener("DOMContentLoaded", function () {
+			function circularProgress() {
+				barOne.animate(0.8);
+				barTwo.animate(0.7);
+				barThree.animate(0.5);
+				barFour.animate(0.9);
+			}
+
+			// Progress Animation
+			gsap.registerPlugin(ScrollTrigger);
+			const anim1 = gsap.timeline({
+				scrollTrigger: {
+					trigger: ".progress-wrapper",
+					start: "top 70%",
+					end: "+=500",
+					onEnter: circularProgress,
+				},
+			});
+		});
+	</script>
 </body>
 
 </html>
