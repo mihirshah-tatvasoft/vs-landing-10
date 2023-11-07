@@ -590,15 +590,11 @@ option:not(:checked) {
 
 /* Main Content
 --------------------------------------------------------------------------------------------------------*/
-.main-content {
-  //   padding-top: 96px;
-  padding-top: 110px;
-}
 
 /* Hero
 --------------------------------------------------------------------------------------------------------*/
 .hero {
-  padding: 30px 0;
+  padding: 150px 0;
   overflow: hidden;
   .hero-content {
     overflow: hidden;
@@ -1073,6 +1069,11 @@ option:not(:checked) {
   }
 }
 
+.slider {
+  background-color: $white;
+  border-radius: 40px;
+  box-shadow: 0px 7px 29px rgba(110, 110, 111, 0.2);
+}
 .slider-content {
   .slick-track {
     border-radius: 40px;
@@ -1086,61 +1087,6 @@ option:not(:checked) {
     position: relative;
     height: auto;
 
-    // &::after {
-    //   content: "";
-    //   width: 70px;
-    //   height: 70px;
-    //   position: absolute;
-    //   bottom: -60px;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   background-image: url("../images/slider-bg-vector.svg");
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    // }
-    .triangle-wrap {
-      padding-bottom: 40px;
-    }
-    .triangle,
-    .triangle:before,
-    .triangle:after {
-      width: 4em;
-      height: 4em;
-    }
-    .triangle {
-      position: relative;
-      overflow: hidden;
-      margin: -44px auto 0;
-      border-radius: 20%;
-      transform: translateX(-14px) translateY(50%) rotate(90deg) skewY(30deg)
-        scaleX(0.866);
-        -webkit-transform:  translateX(-14px) translateY(50%) rotate(90deg) skewY(30deg)
-        scaleX(0.866);
-      cursor: pointer;
-      pointer-events: none;
-      text-align: left;
-    }
-    .triangle:before,
-    .triangle:after {
-      position: absolute;
-      background: $white;
-      pointer-events: none;
-      content: "";
-    }
-    .triangle:before {
-      border-radius: 20% 20% 20% 53%;
-      transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%)
-        skewX(30deg) scaleY(0.866) translateX(-24%);
-        -webkit-transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%)
-        skewX(30deg) scaleY(0.866) translateX(-24%);
-    }
-    .triangle:after {
-      border-radius: 20% 20% 53% 20%;
-      transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%)
-        skewX(-30deg) scaleY(0.866) translateX(24%);
-        -webkit-transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%)
-        skewX(-30deg) scaleY(0.866) translateX(24%);
-    }
     .slider-inner {
       position: relative;
       // filter: drop-shadow(0px 7px 29px rgba(110, 110, 111, 0.2));
@@ -1149,7 +1095,7 @@ option:not(:checked) {
       // background-position: center;
       // padding: 90px 16px 110px;
       padding: 44px 16px 24px;
-      background-color: $white;
+      // background-color: $white;
       border-radius: 40px;
     }
 
@@ -1201,8 +1147,6 @@ option:not(:checked) {
       }
 
       .img-inner {
-        // width: 120px;
-        // height: 120px;
         margin: 0 auto;
 
         &::after,
@@ -1444,6 +1388,43 @@ option:not(:checked) {
       height: 56px;
     }
   }
+}
+
+.triangle-wrap {
+  padding-bottom: 40px;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+  width: 4em;
+  height: 4em;
+}
+.triangle {
+  position: relative;
+  overflow: hidden;
+  margin: -44px auto 0;
+  border-radius: 20%;
+  transform: rotate(135deg);
+  cursor: pointer;
+  pointer-events: none;
+  text-align: left;
+}
+.triangle:before,
+.triangle:after {
+  position: absolute;
+  background: $white;
+  pointer-events: none;
+  content: "";
+}
+.triangle:before {
+  border-radius: 20%;
+  box-shadow: 0px 7px 29px rgba(110, 110, 111, 0.2);
+  z-index: 1;
+}
+.triangle:after {
+  border-radius: 20%;
+  box-shadow: 0px 7px 29px rgba(110, 110, 111, 0.2);
+  z-index: 3;
 }
 
 /* Footer
@@ -1822,11 +1803,11 @@ option:not(:checked) {
       border-left: 1px solid $white;
     }
   }
-  .product{
+  .product {
     padding: 42px 0 30px;
   }
-  .testimonials{
-    padding: 30px 0 ;
+  .testimonials {
+    padding: 30px 0;
   }
   .blog {
     .blog-card {
@@ -1870,11 +1851,8 @@ option:not(:checked) {
       margin-right: 140px;
     }
   }
-  .main-content {
-    padding-top: 152px;
-  }
   .hero {
-    padding: 30px 0 100px;
+    padding: 182px 0 100px;
     .hero-showcase {
       .top-left {
         .bg-layer {
